@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/slider.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="./js/classie.js"></script>
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e){
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 50,
+                    header = document.querySelector("header");
+                if (distanceY > shrinkOn) {
+                    classie.add(header,"smaller");
+                    classie.add(header,"header-bg");
+                } else {
+                    if (classie.has(header,"smaller")) {
+                        classie.remove(header,"smaller");
+                        classie.remove(header,"header-bg");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+    </script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header-top">
+        <div class="row">
+
+            <nav class="menu navbar">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navCollapsible" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div id="logo">
+                  <img src="./images/logo.png" alt="logo">
+                </div>
+              </div>
+              <div class="collapse navbar-collapse" id="navCollapsible">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="#">HOME</a>
+                  </li>
+                  <li>
+                    <a href="#">PRODUCTS</a>
+                  </li>
+                  <li>
+                    <a href="#">HISTORY</a>
+                  </li>
+                  <li>
+                    <a href="#">SHOWROOM</a>
+                  </li>
+                  <li>
+                    <a href="#">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    </header>
+    <!--**HEADER**-->
+    <div class="clearfix"></div>
+    <div class="links-nav">
+      <div class="container">
+        <ul>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">OFFICE</a></li>
+          <li><a href="#">FURNITURE</a></li>
+          <li><a href="#">MODERN</a></li>
+          <li><a href="#">CLASSIC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <!--1. SECTION-->
+    <div class="mbr-section mbr-section--full-height" id="pd-section1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <img src="./images/product-details-slider1.png" class="img-responsive image-block image-center" alt="">
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6"></div>
+        </div>
+      </div>
+    </div>
+    <!--**1. SECTION**-->
+    <div class="clearfix"></div>
+    <!--2. SECTION-->
+
+    <!--**2. SECTION**-->
+    <!--FOOTER SECTION-->
+    <footer class="mbr-section">
+      <div id="footer-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <h4 id="link-explore">CONTACT US</h4>
+              <p>132A Bridge Road Richmond VIC <br/>Australia</p>
+              <p>Talk to us on 1300 132</p>
+              <p>info@interior.com</p>
+            </div>
+            <!--FOOTER MIDDLE-->
+            <div class="col-sm-5 col-md-5 col-lg-5">
+              <h4 id="link-explore">USEFUL INFORMATION</h4>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <ul>
+                    <li><a href="#">SALES TERMS</a></li>
+                    <li><a href="#">CUSTOMER CARE</a></li>
+                    <li><a href="#">DELIVERY</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <ul>
+                    <li><a href="#">ARCHITECT ACCOUNTS</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">EXCHANGES & RETURNS</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+            <!--**FOOTER MIDDLE**-->
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <h4 id="link-explore">LET'S STAY IN TOUCH!</h4>
+              <p>Suscribe to know about our latest news, products and special offers just for suscribers.</p>
+              <input type="email" placeholder="your email address" class="footer-input"/>
+              <button class="footer-btn"><span class="fa fa-paper-plane footer-input-icon" aria-hidden="true"></span></button>
+            </div>
+            <!--Footer Bottom-->
+            <div id="footer-bottom">
+              <div class="col-sm-5 col-md-5 col-lg-5">
+                <p class="text-center footer-text">© Copyright - INTERIOR 2016. All Rights Reserved.</p>
+              </div>
+              <!--Social Icon-->
+              <div class="col-sm-2 col-md-2 col-lg-2">
+                <div class="social-icon">
+                  <a href="https://facebook.com" target="_blank"><span class="fa fa-facebook f-icon"></span></a>
+                  <a href="https://twitter.com" target="_blank"><span class="fa fa-twitter f-icon"></span></a>
+                  <a href="https://plus.google.com" target="_blank"><span class="fa fa-google-plus f-icon"></span></a>
+                  <a href="https://pinterest.com" target="_blank"><span class="fa fa-pinterest f-icon"></span></a>
+                </div>
+              </div>
+              <!--**Social Icon**-->
+              <div class="col-sm-5 col-md-5 col-lg-5">
+                <p class="text-center footer-text">Terms & Conditions  /  Privacy policy & Cookies</p>
+              </div>
+            </div>
+            <!--**Footer Bottom**-->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--**FOOTER SECTION**-->
+
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>

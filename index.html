@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/slider.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="./js/classie.js"></script>
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e){
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 300,
+                    header = document.querySelector("header");
+                if (distanceY > shrinkOn) {
+                    classie.add(header,"smaller");
+                    classie.add(header,"header-bg");
+                } else {
+                    if (classie.has(header,"smaller")) {
+                        classie.remove(header,"smaller");
+                        classie.remove(header,"header-bg");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+    </script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header-top">
+        <div class="row">
+
+            <nav class="menu navbar">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navCollapsible" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div id="logo">
+                  <img src="./images/logo.png" alt="logo">
+                </div>
+              </div>
+              <div class="collapse navbar-collapse" id="navCollapsible">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="#">HOME</a>
+                  </li>
+                  <li>
+                    <a href="#">PRODUCTS</a>
+                  </li>
+                  <li>
+                    <a href="#">HISTORY</a>
+                  </li>
+                  <li>
+                    <a href="#">SHOWROOM</a>
+                  </li>
+                  <li>
+                    <a href="#">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+
+
+
+        </div>
+    </header>
+    <!--**HEADER**-->
+    <div class="clearfix"></div>
+    <!--1. SECTION SLIDER-->
+    <section class="mbr-slider mbr-section mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-5" style="background-color: #4c6972;">
+      <div class="mbr-section__container">
+            <ol class="carousel-indicators">
+                <li data-app-prevent-settings="" data-target="#slider-5" data-slide-to="0" class="active"></li>
+                <li data-app-prevent-settings="" data-target="#slider-5" data-slide-to="1"></li>
+                <!--<li data-app-prevent-settings="" data-target="#slider-5" class="" data-slide-to="2"></li>-->
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <!--First Slide-->
+                <div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height active" style="background-image: url(./images/slider-image-1.png);">
+                    <div class="mbr-box__magnet mbr-box__magnet--center-left mbr-box__magnet--sm-padding">
+                      <div class="row">
+                          <div class="col-md-6">
+                            <div class="mbr-hero">
+                                <h4 class="hero-subtitle">TRENDING</h4>
+                                <h1 class="hero-title">FISHNET CHAIR</h1>
+                                <p class="hero-text">Seat and back with upholstery made of cold cure foam. Steel frame,<br/> available in matt powder-coated black</p>
+                            </div>
+                          <div class="mbr-buttons btn-inverse mbr-buttons--left mbr-buttons--left">
+                            <a class="btn-sydefault" href="#">ORDER US &nbsp;&nbsp;&nbsp;></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!--**First Slide**-->
+            <!--Second Slide-->
+              <div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height" style="background-image: url(./images/slider-image-1.png);">
+                <div class="mbr-box__magnet mbr-box__magnet--center-left mbr-box__magnet--sm-padding">
+                  <div class="row">
+                      <div class="col-md-6">
+                        <div class="mbr-hero">
+                            <h4 class="hero-subtitle">TRENDING</h4>
+                            <h1 class="hero-title">FISHNET CHAIR</h1>
+                            <p class="hero-text">Seat and back with upholstery made of cold cure foam. Steel frame,<br/> available in matt powder-coated black</p>
+                        </div>
+                        <div class="mbr-buttons btn-inverse mbr-buttons--left mbr-buttons--left">
+                          <a class="btn-sydefault" href="#">ORDER US &nbsp;&nbsp;&nbsp;></a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--**Second Slide**-->
+            </div>
+    </section>
+    <!--**1. SECTION SLIDER**-->
+    <div class="clearfix"></div>
+    <!--2. SECTION-->
+    <section class="mbr-section mbr-section--full-height">
+      <div class="container-fluid" id="second-section">
+        <div id="title-area" class="row">
+          <div class="col-md-9 col-sm-9">
+            <ul>
+              <li><h1 class="default-title"><a href="#" id="active">Featured</a></h1></li>
+              <li><h1 class="default-title"><a href="">New</a></h1></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <h1 id="link-explore"><a href="#">EXPLORE ALL ></a></h1>
+          </div>
+        </div>
+
+
+          <div class="col-sm-6 col-md-6 col-lg-3 overlay-container">
+            <img src="./images/hp-product1.png" class="image img-responsive center-block" alt="Product"/>
+            <div class="middle">
+              <div class="text">Lorem Ipsum</div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 overlay-container">
+            <img src="./images/hp-product2.png" class="image img-responsive center-block" alt="Product"/>
+            <div class="middle">
+              <div class="text">Lorem Ipsum</div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 overlay-container">
+            <img src="./images/hp-product3.png" class="image img-responsive center-block" alt="Product"/>
+            <div class="middle">
+              <div class="text">Lorem Ipsum</div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3 overlay-container">
+            <img src="./images/hp-product4.png" class="image img-responsive center-block" alt="Product"/>
+            <div class="middle">
+              <div class="text">Lorem Ipsum</div>
+            </div>
+          </div>
+
+        <div class="row">
+
+          <div class="promo-div">
+            <img src="./images/promo-img-1.png" class="img-responsive promo-img" alt="Promo Image">
+              <div class="middle-text">
+                <h4 class="promo-subtitle">EXCLUSIVE</h4>
+                <h1 class="default-title">Fishnet Chair</h1>
+                <p class="hero-text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</p>
+                <a href="#" class="btn-sydefault">ORDER US  ></a>
+              </div>
+          </div>
+
+          <div class="promo-div">
+            <img src="./images/promo-img-2.png" class="img-responsive promo-img" alt="Promo Image">
+            <div class="middle-text">
+              <h4 class="promo-subtitle">EXCLUSIVE</h4>
+              <h1 class="default-title">Fishnet Chair</h1>
+              <p class="hero-text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</p>
+              <a href="#" class="btn-sydefault">ORDER US  ></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!--**2. SECTION**-->
+    <div class="clearfix"></div>
+    <!--3. SECTION-->
+    <section class="mbr-section mbr-section--full-height">
+      <div class="container-fluid" id="third-section">
+        <div id="title-area">
+          <div class="col-md-9 col-sm-9">
+            <ul>
+              <h1 class="default-title">Trending Products</h1>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <h1 id="link-explore"><a href="#">EXPLORE ALL ></a></h1>
+          </div>
+        </div>
+        <div id="products">
+          <div class="col-sm-6 col-md-4 col-lg-4"><img src="./images/product-11.png" alt="Product" class="img-responsive image center-block"></div>
+          <div class="col-sm-6 col-md-4 col-lg-4"><img src="./images/product-21.png" alt="Product" class="img-responsive image center-block"></div>
+          <div class="col-sm-6 col-md-4 col-lg-4"><img src="./images/product-31.png" alt="Product" class="img-responsive image center-block"></div>
+          <div class="col-sm-6 col-md-4 col-lg-4"><img src="./images/product-41.png" alt="Product" class="img-responsive image center-block"></div>
+          <div class="col-sm-6 col-md-4 col-lg-4"><img src="./images/product-5.png" alt="Product" class="img-responsive image center-block"></div>
+          <div class="col-sm-6 col-md-4 col-lg-4"><img src="./images/product-6.png" alt="Product" class="img-responsive image center-block"></div>
+        </div>
+      </div>
+    </section>
+    <!--**3. SECTION**-->
+    <div class="clearfix"></div>
+    <!--4. SECTION SLIDER-->
+    <section class="mbr-slider mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-5" style="background-color: #4c6972;">
+      <div class="mbr-section__container">
+            <ol class="carousel-indicators">
+                <li data-app-prevent-settings="" data-target="#slider-5" data-slide-to="0" class="active"></li>
+                <!--<li data-app-prevent-settings="" data-target="#slider-5" class="" data-slide-to="2"></li>-->
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height active" style="background-image: url(./images/hot-deal-slider1.png);">
+                    <div class="mbr-box__magnet mbr-box__magnet--center-left mbr-box__magnet--sm-padding">
+                      <div class="row">
+                          <div class="col-md-6">
+                            <div class="mbr-hero">
+                                <h4 class="hero-subtitle" style="color:red">HOT DEAL</h4>
+                                <h1 class="hero-title">FISHNET CHAIR</h1>
+                                <p class="hero-text">Seat and back with upholstery made of cold cure foam. Steel frame,<br/> available in matt powder-coated black</p>
+                            </div>
+                          <div class="mbr-buttons btn-inverse mbr-buttons--left mbr-buttons--left">
+                            <a class="btn-sydefault" href="#">ORDER US &nbsp;&nbsp;&nbsp;></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+    </section>
+    <!--***4. SECTİON SLIDER***-->
+    <div class="clearfix"></div>
+    <!--5. SECTION-->
+    <section class="mbr-section">
+      <div class="container-fluid" id="fifth-section">
+        <div id="products" class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="exclusive-container">
+              <img src="./images/product-lg.png" alt="Product" class="img-responsive image center-block">
+              <div class="middle-text">
+                <h4 class="promo-subtitle">EXCLUSIVE</h4>
+                <h1 class="default-title">Fishnet Chair</h1>
+                <p class="hero-text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</p>
+                <a href="#" class="btn-sydefault">ORDER US  ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3"><img src="./images/product-sm-2.png" alt="" class="img-responsive image center-block"></div>
+          <div class="col-sm-6 col-md-3 col-lg-3"><img src="./images/product-sm-3.png" alt="" class="img-responsive image center-block"></div>
+          <div class="col-sm-6 col-md-3 col-lg-3"><img src="./images/product-sm-4.png" alt="" class="img-responsive image center-block"></div>
+          <div class="col-sm-6 col-md-3 col-lg-3"><img src="./images/product-sm-5.png" alt="" class="img-responsive image center-block"></div>
+        </div>
+      </div>
+    </section>
+    <!--**5. SECTION**-->
+    <div class="clearfix"></div>
+    <!--6. SECTION-->
+    <section class="mbr-section" id="mobile-bg">
+      <div class="container-fluid">
+        <div class="col-md-6" id="mobile-container">
+          <div class="mbr-hero">
+              <h4 class="hero-subtitle" id="hero-mobile">MOBILE APP</h4>
+              <h1 class="hero-title">FIND. FOLLOW.</h1>
+              <h1 class="hero-title">FAVOURITE.</h1>
+              <p class="mobile-text">Save your favourites and share your style</p>
+          </div>
+          <div class="mbr-buttons btn-inverse mbr-buttons--left mbr-buttons--left">
+            <!--<a class="btn-sydefault" href="#">ORDER US &nbsp;&nbsp;&nbsp;></a>-->
+            <div class="store-icon">
+              <a href="#" target="_blank"><img src="./images/app-store.png" alt="Apple Store"></a>
+            </div>
+            <div class="store-icon">
+              <a href="#" target="_blank"><img src="./images/google-store.png" alt="Google Play Store"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--**6. SECTION**-->
+    <div class="clearfix"></div>
+    <!--FOOTER SECTION-->
+    <footer class="mbr-section">
+      <div id="footer-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <h4 id="link-explore">CONTACT US</h4>
+              <p>132A Bridge Road Richmond VIC <br/>Australia</p>
+              <p>Talk to us on 1300 132</p>
+              <p>info@interior.com</p>
+            </div>
+            <!--FOOTER MIDDLE-->
+            <div class="col-sm-5 col-md-5 col-lg-5">
+              <h4 id="link-explore">USEFUL INFORMATION</h4>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <ul>
+                    <li><a href="#">SALES TERMS</a></li>
+                    <li><a href="#">CUSTOMER CARE</a></li>
+                    <li><a href="#">DELIVERY</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <ul>
+                    <li><a href="#">ARCHITECT ACCOUNTS</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">EXCHANGES & RETURNS</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+            <!--**FOOTER MIDDLE**-->
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <h4 id="link-explore">LET'S STAY IN TOUCH!</h4>
+              <p>Suscribe to know about our latest news, products and special offers just for suscribers.</p>
+              <input type="email" placeholder="your email address" class="footer-input"/>
+              <button class="footer-btn"><span class="fa fa-paper-plane footer-input-icon" aria-hidden="true"></span></button>
+            </div>
+            <!--Footer Bottom-->
+            <div id="footer-bottom">
+              <div class="col-sm-5 col-md-5 col-lg-5">
+                <p class="text-center footer-text">© Copyright - INTERIOR 2016. All Rights Reserved.</p>
+              </div>
+              <!--Social Icon-->
+              <div class="col-sm-2 col-md-2 col-lg-2">
+                <div class="social-icon">
+                  <a href="https://facebook.com" target="_blank"><span class="fa fa-facebook f-icon"></span></a>
+                  <a href="https://twitter.com" target="_blank"><span class="fa fa-twitter f-icon"></span></a>
+                  <a href="https://plus.google.com" target="_blank"><span class="fa fa-google-plus f-icon"></span></a>
+                  <a href="https://pinterest.com" target="_blank"><span class="fa fa-pinterest f-icon"></span></a>
+                </div>
+              </div>
+              <!--**Social Icon**-->
+              <div class="col-sm-5 col-md-5 col-lg-5">
+                <p class="text-center footer-text">Terms & Conditions  /  Privacy policy & Cookies</p>
+              </div>
+            </div>
+            <!--**Footer Bottom**-->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--**FOOTER SECTION**-->
+
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
