@@ -76,7 +76,6 @@ footer{
 
 nav{
   font-size: 14px;
-/*  background-color: #f0f0f0;*/
   ul{
 
   }
@@ -92,6 +91,7 @@ nav{
       text-decoration: none;
       cursor: pointer;
       color: $menu-color;
+      background-color: transparent!important;
       transition: all 0.2s;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
@@ -101,10 +101,12 @@ nav{
     &:active{
       text-decoration: none;
       font-weight: 700;
+      background-color: transparent!important;
       color:$menu-color;
     }
     &:focus{
       text-decoration: none;
+      background-color: transparent!important;
       font-weight: 700;
       color: $menu-color;
     }
@@ -439,7 +441,7 @@ h1#link-explore{
     margin-left: auto;
     margin-right: auto;
     li{
-      padding: 25px;
+      padding: 25px 10px 25px 5px;
       list-style-type: none;
       display: inline-block;
       a{
@@ -451,7 +453,56 @@ h1#link-explore{
           text-decoration: none;
           color: $menu-color;
         }
+        &:focus{
+          text-decoration: none;
+        }
+        &:active{
+          text-decoration: none;
+        }
       }
     }
   }
+}
+
+
+.product-price{
+  font-family: font81954;
+  font-size: 72px;
+}
+.product-price-lower{
+  font-size: 36px;
+}
+
+.product-excerpt{
+  font-family: font81954;
+  font-size: 16px;
+}
+
+.pp-button{
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  height: 69px;
+  width: 100%;
+  border-radius: 35px;
+  &:active{
+    outline: none;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+.red{
+  background-color: #f44336;
+  color:#fff;
+}
+
+.detail-textarea{
+  padding: 25px 0 25px 10px;
+}
+
+#pd-products{
+  padding: 30px 0;
+  display: flex;
 }

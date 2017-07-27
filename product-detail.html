@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/slider.min.css">
+    <link rel="stylesheet" href="./css/product-detail-slider.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://www.fontify.me/wf/54e4f92739676a2394d84c9bd44d2158" rel="stylesheet" type="text/css">
     <script src="./js/classie.js"></script>
     <script>
         function init() {
@@ -90,17 +92,73 @@
     <div class="mbr-section mbr-section--full-height" id="pd-section1">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-6">
-            <img src="./images/product-details-slider1.png" class="img-responsive image-block image-center" alt="">
+          <!--Left-->
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="preview-pic tab-content">
+    						  <div class="tab-pane active" id="pic-1"><img src="./images/product-details-slider1.png" /></div>
+    						  <div class="tab-pane" id="pic-2"><img src="./images/product-details-slider1.png" /></div>
+    						  <div class="tab-pane" id="pic-3"><img src="./images/product-details-slider1.png" /></div>
+    						</div>
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="detailslider-thumbnails">
+      						<ul class="preview-thumbnail nav nav-tabs">
+      						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="./images/product-details-slider1-thumb.png" /></a></li>
+      						  <li><a data-target="#pic-2" data-toggle="tab"><img src="./images/product-details-slider2-thumb.png" /></a></li>
+      						  <li><a data-target="#pic-3" data-toggle="tab"><img src="./images/product-details-slider3-thumb.png" /></a></li>
+      						</ul>
+                </div>
+              </div>
+
+            </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-6"></div>
+          <!--**Left**-->
+          <!--Right-->
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <h1 class="default-title text-center">Fishnet Chair</h1>
+            <h4 class="hero-subtitle text-center" style="color:red;">HOT DEAL</h4>
+            <p class="product-price text-center"><span class="product-price-lower">$</span> 36.7<span class="product-price-lower">/sq</span></p>
+            <button class="pp-button red">ORDER US   ></button>
+            <div class="detail-textarea">
+              <p class="product-excerpt">The majesty of Mountains - Ugmonk style.</p>
+              <p class="product-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+              <p class="product-excerpt">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="product-excerpt">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+          </div>
+          <!--**Right**-->
         </div>
       </div>
     </div>
     <!--**1. SECTION**-->
     <div class="clearfix"></div>
     <!--2. SECTION-->
+    <div class="mbr-section" id="pd-section2">
+      <div class="container-fluid" id="pd-section2">
 
+        <div id="title-area">
+          <div class="col-lg-9 col-md-9 col-sm-9">
+            <ul>
+              <li><h1 class="default-title">Related Products</h1></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-3 col-lg-offset-1 col-md-offset-1">
+            <h1 id="link-explore"><a href="#">EXPLORE ALL ></a></h1>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div id="pd-products">
+          <div class="col-sm-12 col-md-4 col-lg-4"><img src="./images/product-11.png" alt="Product" class="img-respnsive image center-block"/></div>
+          <div class="col-sm-12 col-md-4 col-lg-4"><img src="./images/product-21.png" alt="Product" class="img-respnsive image center-block"/></div>
+          <div class="col-sm-12 col-md-4 col-lg-4"><img src="./images/product-31.png" alt="Product" class="img-respnsive image center-block"/></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
     <!--**2. SECTION**-->
     <!--FOOTER SECTION-->
     <footer class="mbr-section">
