@@ -506,3 +506,114 @@ h1#link-explore{
   padding: 30px 0;
   display: flex;
 }
+
+.page-title{
+  background-color: #f5f5f5;
+  width: 100%;
+  min-height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 80px;
+}
+
+.page-title-bc{
+  font-size: 62px;
+  font-weight: 100;
+  position: absolute;
+  padding-bottom: 20px;
+  bottom: 0;
+}
+
+#p-section1{
+  padding: 35rem 0 0 0;
+}
+
+.filter-menu{
+  width: 100%;
+  padding: 0 20px 30px ;
+  ul{
+    li{
+      display: inline-block;
+      padding: 0 10px;
+      a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $second-color;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  background: none;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  border: none;
+  color: $second-color;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  color:$menu-color!important;
+  outline: 0;
+  border-bottom: 2px solid $menu-color;
+}
+
+.button.is-checked {
+
+}
+
+.button:active {
+
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+/* ---- isotope ---- */
+
+.grid {
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
