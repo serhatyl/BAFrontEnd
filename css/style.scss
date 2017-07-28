@@ -279,7 +279,7 @@ h1#link-explore{
 }
 
 .text {
-  padding: 16px 32px;
+  text-align: center;
 }
 /*Image Overlay Bitiş*/
 
@@ -616,4 +616,76 @@ h1#link-explore{
   content: '';
   display: block;
   clear: both;
+}
+
+.overlay-heading{
+  font-weight: bold;
+  font-size: 22px;
+  color: $menu-color;
+}
+
+.overlay-paragraph{
+  font-size: 13px;
+  font-weight: 300;
+  color: $second-color;
+}
+
+.overlay-button{
+  background-color: #fff;
+  border: 0;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  border-radius: 30px;
+  padding: 0;
+  box-shadow: 1px 2px 7px grey;
+  i{
+    position: absolute;
+    top: 5px;
+    left: 48%;
+  }
+}
+
+
+/* SEARCH */
+
+
+#search {
+    display: inline-block;
+    font-size:1em;
+    margin-top:5em;
+    margin-right: 1em;
+    vertical-align: middle;
+    padding-right: .5em;
+}
+
+#s {
+    border-width: medium medium 1px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color #FFF;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    background-color: #000;
+    color: #D3D3D3;
+    height:100%;
+    line-height: 1.5;
+    font-style: italic;
+    letter-spacing:1.5px;
+    margin-left: .2em;
+    margin-right: .2em;
+    display: none;
+    text-indent:.5em;
+    outline:none;
+}
+
+#searchsubmit {
+    background-color: transparent;
+    border: medium none;
+    cursor: pointer;
+    padding:1px;
+    padding-right:.2em;
 }
