@@ -242,6 +242,10 @@ h1#link-explore{
 /*Image Overlay CSS*/
 .overlay-container {
   position: relative;
+  img:hover{
+    border: 1px solid $second-color!important;
+    z-index: 999
+  }
 }
 
 .image {
@@ -648,44 +652,80 @@ h1#link-explore{
 }
 
 
-/* SEARCH */
 
 
-#search {
-    display: inline-block;
-    font-size:1em;
-    margin-top:5em;
-    margin-right: 1em;
-    vertical-align: middle;
-    padding-right: .5em;
+
+
+
+
+
+
+.popup-box-on {
+    display: block !important;
 }
-
-#s {
-    border-width: medium medium 1px;
-    border-style: none none solid;
-    border-color: -moz-use-text-color -moz-use-text-color #FFF;
-    -moz-border-top-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    border-image: none;
-    background-color: #000;
-    color: #D3D3D3;
-    height:100%;
-    line-height: 1.5;
-    font-style: italic;
-    letter-spacing:1.5px;
-    margin-left: .2em;
-    margin-right: .2em;
+.off {
     display: none;
-    text-indent:.5em;
-    outline:none;
+}
+.chat_box .chat_message_wrapper ul.chat_message > li + li {
+    margin-top: 4px;
 }
 
-#searchsubmit {
-    background-color: transparent;
-    border: medium none;
+#search.open {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(1, 1);
+}
+#search {
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+    width: 100%;
+    z-index: 999999;
+
+}
+#search .close {
+    color: #be5254;
+    font-size: 40px;
+    opacity: 1;
+    padding: 10px 17px;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+}
+button.close {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
     cursor: pointer;
-    padding:1px;
-    padding-right:.2em;
+}
+.close {
+    float: right;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+}
+
+#search input[type="text"] {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    color: #333;
+    font-size: 50px;
+    font-weight: 300;
+    margin: -51px auto 0;
+    outline: medium none;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+#search .btn {
+    left: 50%;
+    margin-top: 60px;
+    padding: 10px 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
 }
