@@ -729,3 +729,12 @@ button.close {
     top: 50%;
     transform: translateX(-50%);
 }
+
+@media only screen and (max-width: 960px) {
+  .promo-div>.middle-text{
+    top:16%;
+  }
+  .navbar-collapse.in{
+    background-color: #000;
+  }
+}
