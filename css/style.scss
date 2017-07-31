@@ -272,10 +272,12 @@ h1#link-explore{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 999;
 }
 
 .overlay-container:hover .image {
-  opacity: 0.3;
+  opacity: 0.1;
+  border:1px solid $menu-color;
 }
 
 .overlay-container:hover .middle {
@@ -644,10 +646,14 @@ h1#link-explore{
   border-radius: 30px;
   padding: 0;
   box-shadow: 1px 2px 7px grey;
+  z-index: 9999;
   i{
     position: absolute;
     top: 5px;
     left: 48%;
+  }
+  &:hover{
+    background-color: #fff!important;
   }
 }
 
@@ -737,4 +743,40 @@ button.close {
   .navbar-collapse.in{
     background-color: #000;
   }
+}
+
+#contact-section1{
+  padding: 20rem 0 0 0;
+}
+
+#history-1{
+  padding: 20rem 0 10rem 0;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 60rem; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 60rem !important;
+}
+
+.form-class{
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+textarea{
+  border:1px solid #ccc;
+}
+
+#contact-form{
+  margin: 5rem 0;
 }
